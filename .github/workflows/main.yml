@@ -1,0 +1,79 @@
+# PowerShell® is subject to trademark!
+
+# Copied from manual workflow.
+
+# Contains actions from other users - not all of the code originated from here!
+
+name: PowerShell virtual environment
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+
+# or API.
+
+on:
+
+  workflow_dispatch:
+
+    # Inputs the workflow accepts.
+
+    inputs:
+
+      command:
+
+        # Friendly description to be shown in the UI instead of 'name'
+
+        description: 'Command'
+
+        # Default value if no value is explicitly provided
+
+        default: 'echo "Hello World"'
+
+        # Input has to be provided for the workflow to run
+
+        required: true
+
+        
+
+      
+
+        
+
+      vm:
+
+        description: 'Windows version (2019 or latest)'
+
+        default: 'latest'
+
+        required: true
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
+jobs:
+
+  # This workflow contains a single job called "windows"
+
+  windows:
+
+    # The type of runner that the job will run on
+
+    runs-on: windows-${{ github.event.inputs.vm }}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+
+    steps:
+
+    # Runs a single command using the runners shell
+
+    - name: Checkout
+
+      uses: actions/checkout@v2
+
+    - name: Syntax Check
+
+      uses: SleepySysadmin/github-action-pscheck@v0.4.2
+
+    - name: Open PowerShell on the windows-${{ github.event.inputs.vm }} machine server and run ${{ github.event.inputs.command }}
+
+      run: ${{ github.event.inputs.command }}
+
+    
