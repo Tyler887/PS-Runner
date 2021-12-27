@@ -1,5 +1,6 @@
 # PowerShell® is subject to trademark!
-# Copied from manual workflow
+# Copied from manual workflow.
+# Contains actions from other users - not all of the code originated from here!
 
 name: PowerShell virtual environment
 
@@ -36,6 +37,9 @@ jobs:
     # Runs a single command using the runners shell
     - name: Checkout
       uses: actions/checkout@v2
+    - name: Syntax Check
+
+      uses: SleepySysadmin/github-action-pscheck@v0.4.2
     - name: Open PowerShell on the windows-${{ github.event.inputs.vm }} machine server and run ${{ github.event.inputs.command }}
       run: ${{ github.event.inputs.command }}
     
