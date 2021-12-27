@@ -3,7 +3,7 @@
 # Contains actions from other users - not all of the code originated from here!
 
 name: PowerShell virtual environment
-
+description: Run PowerShell commands without ever leaving GitHub
 icon: arrow-right-circle
 color: blue
 # Controls when the action will run. Workflow runs when manually triggered using the UI
