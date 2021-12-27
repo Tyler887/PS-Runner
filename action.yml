@@ -37,9 +37,9 @@ jobs:
     # Runs a single command using the runners shell
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Syntax Check
+    - name: Cache everything done in the previous session
 
-      uses: SleepySysadmin/github-action-pscheck@v0.4.2
+      uses: actions/cache@v2
     - name: Open PowerShell on the windows-${{ github.event.inputs.vm }} machine server and run ${{ github.event.inputs.command }}
       run: ${{ github.event.inputs.command }}
     
