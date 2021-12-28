@@ -20,10 +20,7 @@ on:
         default: 'echo "Hello World"'
         # Input has to be provided for the workflow to run
         required: true
-      checkout_ver:
-        description: 'Version of actions/checkout'
-        default: 'v2'
-        required: false                
+                     
       vm:
         description: 'Windows version (2019 or latest)'
         default: 'latest'
@@ -40,7 +37,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Checkout
-      uses: actions/checkout@${{ github.event.inputs.checkout_ver }}
+      uses: actions/checkout@${{ githu
 
       
       
