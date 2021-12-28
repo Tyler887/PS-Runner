@@ -34,7 +34,7 @@ jobs:
 
           name: 🛠️Dev release
 
-          message: This release was **auto-generated** by [GitHub Actions](/features/actions.
+          message: This release was **auto-generated** by [GitHub Actions](/features/actions).
 
           prerelease: true
 
