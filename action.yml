@@ -4,7 +4,6 @@
 
 name: PowerShell virtual environment
 description: Run PowerShell commands without ever leaving GitHub
-icon: arrow-right-circ
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
