@@ -20,13 +20,14 @@ on:
         default: 'echo "Hello World"'
         # Input has to be provided for the workflow to run
         required: true
-
-      
-        
+      checkout_ver:
+        description: Version of actions/checkout
+        default: 'v2'
+        required: false                       
       vm:
         description: 'Windows version (2019 or latest)'
         default: 'latest'
-        required: true
+        required: false
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
