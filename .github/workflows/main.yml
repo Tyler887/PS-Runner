@@ -38,13 +38,7 @@ on:
 
         required: true
 
-      checkout:
-
-        description: 'Version of actions/checkout'
-
-        default: 'v2'
-
-        required: false                
+      
 
       vm:
 
