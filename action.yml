@@ -37,11 +37,10 @@ jobs:
     # Runs a single command using the runners shell
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Cache everything done in the previous session
 
-      uses: actions/cache@v2
-      with:
-        key: a24DGSsAKd
+      
+      
+       
     - name: Open PowerShell on the windows-${{ github.event.inputs.vm }} machine server and run ${{ github.event.inputs.command }}
       run: ${{ github.event.inputs.command }}
     
