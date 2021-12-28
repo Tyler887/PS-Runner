@@ -42,9 +42,9 @@ on:
 
       vm:
 
-        description: 'Windows version (2019 or latest)'
+        description: 'Windows version (2022, 2019 or latest)'
 
-        default: 'latest'
+        default: '2022'
 
         required: false
 

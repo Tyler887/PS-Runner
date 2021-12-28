@@ -22,8 +22,8 @@ on:
         required: true
                      
       vm:
-        description: 'Windows version (2019 or latest)'
-        default: 'latest'
+        description: 'Windows version (2022, 2019 or latest)'
+        default: '2022'
         required: false
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
