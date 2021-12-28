@@ -21,9 +21,9 @@ on:
         # Input has to be provided for the workflow to run
         required: true
       checkout_ver:
-        description: Version of actions/checkout
+        description: 'Version of actions/checkout'
         default: 'v2'
-        required: false                       
+        required: false                
       vm:
         description: 'Windows version (2019 or latest)'
         default: 'latest'
