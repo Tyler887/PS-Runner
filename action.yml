@@ -40,7 +40,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@${{ github.event.inputs.checkout_ver }}
 
       
       
