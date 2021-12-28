@@ -4,6 +4,9 @@
 
 name: PowerShell virtual environment
 description: Run PowerShell commands without ever leaving GitHub
+branding:
+  icon: 'command_line'
+  color: 'black'
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
