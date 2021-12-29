@@ -1,7 +1,7 @@
 # PowerShell VM Environment
 GitHub Action to execute Windows Power shell commands on GitHub.
 
-To run, go to the Actions tab, see "PowerShell virtual environment", click `Run workflow`, and set the server to run Windows on (`2022`, `2019` or `latest`), as well as the command to run.
+To run, go to the Actions tab, see "PowerShell virtual environment", click `Run workflow`, and set the [server](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources) to run Windows on (`2022`, `2019` or `latest`), as well as the command to run.
 
 GitHub then connects to your specified server to run Windows PowerShell and run your command.
 
