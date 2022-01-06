@@ -8,4 +8,4 @@ GitHub then connects to your specified server to run Windows PowerShell and run 
 By default, the following is set for the workflow run:
 * Command: `echo "Hello World"`
 * Server: Latest version (`2022`)<br>Note: As Server 2022 is not production released, `latest` uses Server 2019 still.
-* Checkout version: `v2` (Latest version.)
+* Checkout version: `v2` (Latest version.)<br>Note: This can **not** be changed.
