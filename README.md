@@ -7,5 +7,5 @@ GitHub then connects to your specified server to run Windows PowerShell and run 
 
 By default, the following is set for the workflow run:
 * Command: `echo "Hello World"`
-* Server: Latest version (`2022`)<br>Note: As Server 2022 is not production released, `latest` uses Server 2019 still. *Microsoft is making `2022` the value for `latest`. For more info see https://github.com/actions/virtual-environments/issues/4856.*
+* Server: Latest version (`2022`)<br>`latest` uses Server 2019 still. *Microsoft is making `2022` the value for `latest`. For more info see https://github.com/actions/virtual-environments/issues/4856.*
 * Checkout version: `v2` (Latest version.)<br>Note: This can **not** be changed.
